@@ -1,8 +1,8 @@
 const nav = document.querySelector("nav");
-const header = document.querySelector("header");
+const content = document.querySelector(".content");
 
 const options = {
-  rooMargin: "-12px",
+  rootMargin: "-12px",
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -15,4 +15,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, options);
 
-observer.observe(header);
+observer.observe(content);

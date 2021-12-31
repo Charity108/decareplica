@@ -1,18 +1,18 @@
 const nav = document.querySelector("nav");
-const content = document.querySelector(".content");
+const header = document.querySelector("header");
 
 const options = {
-  rootMargin: "-12px",
+  rootMargin: "-12%",
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      nav.classList.remove(changeColor);
+      nav.classList.remove("changeColor");
     } else {
-      nav.classList.add(changeColor);
+      nav.classList.add("changeColor");
     }
   });
 }, options);
 
-observer.observe(content);
+observer.observe(header);

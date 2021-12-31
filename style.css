@@ -9,17 +9,28 @@ body {
   position: relative;
 }
 
-.content {
-  background: url(./images/download.jpg);
+header {
   min-height: 450px;
-  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
   position: relative;
+}
+
+header img {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(30%);
 }
 
 nav {
   position: fixed;
-  padding-top: 30px;
-  margin-right: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -34,7 +45,6 @@ nav {
   text-decoration: none;
   font-size: 0.6em;
   color: white;
-  margin: 0, 20px;
 }
 
 #dev:hover {
@@ -65,26 +75,24 @@ nav ul {
   color: #fff;
   text-align: center;
   font-size: 2.3em;
+  position: absolute;
+  top: 100px;
+  text-align: center;
 }
 
 #firstp {
   font-size: 1.1em;
-  margin-top: 25px;
+  margin-top: 120px;
 }
 
 #firstl {
   text-decoration: none;
   background-color: lightgreen;
   color: #fff;
-  /* margin-left: 50%; */
   font-size: 0.8em;
   padding: 15px 40px 15px 40px;
   border-radius: 0.2em;
-}
-.build {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
+  margin-top: 220px;
 }
 
 .container1 {
@@ -103,7 +111,7 @@ nav ul {
 }
 
 .container1 img {
-  width: 60px;
+  width: 65px;
 }
 
 #why,
@@ -239,7 +247,6 @@ nav ul {
   background-color: rgb(90, 165, 90);
   color: #fff;
   width: 80vw;
-  /* width: 850px; */
   margin: auto;
 }
 
@@ -346,6 +353,11 @@ footer {
   color: #fff;
   font-weight: normal;
 }
+
+.sub-read img {
+  filter: brightness(50%);
+}
+
 .mm {
   position: absolute;
   bottom: 5px;
@@ -362,16 +374,6 @@ footer {
   opacity: 0.8;
 }
 
-#sub-read2 {
-  background-image: url(./images/Decagon-2.jpeg);
-  background-size: cover;
-}
-
-#sub-read3 {
-  background-image: url(./images/Decagon-3.jpeg);
-  background-size: cover;
-}
-
 .read {
   display: flex;
   flex-wrap: wrap;
@@ -381,5 +383,6 @@ footer {
 
 .changeColor {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
+  box-shadow: 0 2px 5px;
 }
